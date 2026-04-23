@@ -1,10 +1,112 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Resume</title>
+  <meta charset="UTF-8">
+  <title>Lokendra Singh - Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #cbd5f5;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+      background: #1e293b;
+      padding: 8px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Lokendra Singh</h1>
-  <p>This is my resume website</p>
+
+<!-- HERO SECTION -->
+<div class="hero">
+  <div>
+    <h1>Hi, I'm Lokendra 👋</h1>
+    <p>Web Developer | Student | Learner</p>
+    <button class="btn">View My Work</button>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>I am passionate about building websites and learning new technologies.</p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li>Resume Website</li>
+      <li>Portfolio Website</li>
+    </ul>
+  </div>
+
+</div>
+
 </body>
 </html>
