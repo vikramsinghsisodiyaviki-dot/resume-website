@@ -2,111 +2,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lokendra Singh - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikram Singh Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-    h1 {
-      font-size: 40px;
-      margin: 10px 0;
-    }
+body{
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color:white;
+  scroll-behavior:smooth;
+}
 
-    p {
-      color: #cbd5f5;
-    }
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:15px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+}
 
-    .btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #38bdf8;
-      border: none;
-      color: black;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  opacity:0.7;
+}
+nav a:hover{opacity:1}
 
-    .container {
-      padding: 40px;
-    }
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
 
-    .section {
-      margin-bottom: 40px;
-    }
+.hero h1{
+  font-size:60px;
+  background:linear-gradient(to right,#a855f7,#06b6d4);
+  -webkit-background-clip:text;
+  color:transparent;
+}
 
-    h2 {
-      border-bottom: 2px solid #38bdf8;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+.hero p{opacity:0.7}
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+}
 
-    li {
-      margin: 5px 0;
-      background: #1e293b;
-      padding: 8px;
-      border-radius: 5px;
-    }
-  </style>
+.btn1{
+  background:linear-gradient(to right,#7c3aed,#06b6d4);
+  color:white;
+}
+.btn2{
+  border:1px solid white;
+  background:transparent;
+  color:white;
+}
+
+/* SECTION */
+section{padding:100px 10%}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:32px;
+  background:linear-gradient(to right,#a855f7,#06b6d4);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* ABOUT */
+.about{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  align-items:center;
+}
+
+.about img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  border:3px solid #06b6d4;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:15px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* CONTACT */
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border-radius:8px;
+  border:none;
+}
+
+/* SOCIAL */
+.social a{
+  margin-right:10px;
+  color:#06b6d4;
+  text-decoration:none;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  opacity:0.5;
+}
+</style>
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
-<div class="hero">
-  <div>
-    <h1>Hi, I'm Lokendra 👋</h1>
-    <p>Web Developer | Student | Learner</p>
-    <button class="btn">View My Work</button>
-  </div>
+<!-- NAV -->
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h1>Vikram Singh</h1>
+<p>Full Stack Developer Student</p>
+<p>Building modern web apps with real-world impact</p>
+
+<button class="btn btn1">View Work</button>
+<button class="btn btn2">Contact</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+
+<div class="about">
+<img src="profile.jpg">
+
+<div class="card">
+<p>
+I am a student passionate about full stack development and AI software building.
+I love creating modern web applications and continuously improving my skills.
+My goal is to build myself into a successful developer.
+</p>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="grid">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+<div class="card">Python</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Bachelor of Science</h3>
+<p>SBRM Nagaur College</p>
+<p>CGPA: 7.83</p>
 </div>
 
-<!-- MAIN CONTENT -->
-<div class="container">
+<div class="card">
+<h3>Class 12 (Science)</h3>
+<p>Manasvi Senior Secondary School</p>
+<p>94.80%</p>
+<p>Maths: 94 Marks</p>
+</div>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>I am passionate about building websites and learning new technologies.</p>
-  </div>
-
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>Resume Website</li>
-      <li>Portfolio Website</li>
-    </ul>
-  </div>
+<div class="card">
+<h3>Class 10</h3>
+<p>Godwin Public Sr. Sec. School</p>
+<p>94.33%</p>
+</div>
 
 </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+<p>Email: vikramsinghsisodiyaviki@gmail.com</p>
+<p>Phone: 7014347962</p>
+<p>Location: Khinwsar, Nagaur</p>
+
+<div class="social">
+<a href="https://www.instagram.com/kunwar_vikramsingh._" target="_blank">Instagram</a>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Vikram Singh
+</footer>
 
 </body>
 </html>
